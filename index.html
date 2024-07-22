@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/layout.css">
+    <link rel="stylesheet" href="/src/css/responsivestyles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Home Page</h1>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li class="active"><a href="/src/html/index.html">Home</a></li>
+            <li class="active"><a href="/src/html/experience.html">Experience</a></li>
+            <li class="active"><a href="/src/html/interests.html">Interests</a></li>
+            <li class="active"><a href="/src/html/about.html">About</a></li>
+        </ul>
+    </nav>
+    <div class="content-container">
+        <aside id="tech-news">
+            <h2>Technology News</h2>
+            <div id="articles"></div>
+        </aside>
+
+        <div class="main-content">
+            <section>
+                <h2>Welcome!</h2>
+                <p class="welcome">
+                    Welcome to my website, developed by myself, Brandon Stewart.
+                    I am a Computer Science graduate from SUNY New Paltz, in New Paltz, NY.
+
+                    <br>
+                    <br>
+
+                    As a Marine Corps veteran of 8 years, I believe in consistenly learning, growing, and improving.
+                    My time in the Marine Corps has taught me the importance of leadership, teamwork, and dedication,
+                    and I
+                    have a mission oriented mindset.
+
+                    <br>
+                    <br>
+
+                    Please feel free to explore my website, and learn more about me, my experience, and my interests.
+                </p>
+
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+                <ul class="grid">
+
+                    <a href="experience.html#comp-sci-section">
+                        <li>
+                            <h4>Computer Science</h4>
+
+                            <img src="/assets/program-comp-sci.jpg" alt="ComputerScience">
+
+                        </li>
+
+                    </a>
+                    <a href="experience.html#avionics">
+                        <li>
+                            <h4>Avionics</h4>
+
+                            <img src="/assets/avionics-scaled.webp" alt="Avionics">
+
+                        </li>
+                    </a>
+
+                    <a href="experience.html#production-management">
+
+                        <li>
+                            <h4>Production Management</h4>
+                            <img src="/assets/production management.png" alt="ProductionManagement">
+                        </li>
+                    </a>
+                    <a href="experience.html#leadership">
+
+                        <li>
+                            <h4>Leadership</h4>
+                            <img src="/assets/leadership.jpg" alt="Leadership">
+                        </li>
+                    </a>
+
+                </ul>
+            </section>
+
+            <section>
+                <h2>Interests</h2>
+                <ul class="grid">
+                    <a href="/src/html/interests.html#tech">
+                        <li>
+                            <h4>Technology</h4>
+
+                            <img src="/assets/tech.jpg" alt="ComputerScience">
+
+                        </li>
+                    </a>
+                    <a href="interests.html#history">
+                        <li>
+                            <h4>History</h4>
+
+                            <img src="/assets/History.jpg" alt="History">
+
+                        </li>
+                    </a>
+                    <li>
+                        <a href="interests.html#Philosophy">
+
+                            <h4>Philosophy</h4>
+
+                            <img src="/assets/Philosophy.jpg" alt="Philosophy">
+
+                    </li>
+                    </a>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+
+    <script src="/src/js/techNewsAPI.js"></script>
+</body>
+
+</html>
