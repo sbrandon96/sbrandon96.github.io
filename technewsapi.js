@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     const apiKey = 'f352efee7daf4e0280484b6b55fe5d43';
-    const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-    const apiUrl = `${proxyUrl}https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${apiKey}`;
+    const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${apiKey}`;
     
     fetch(apiUrl)
         .then(response => {
