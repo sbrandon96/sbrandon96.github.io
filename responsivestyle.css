@@ -1,0 +1,70 @@
+/* Responsive styles for the website 
+    Author: Brandon Stewart
+*/
+
+@media screen and (max-width: 710px) {
+    .grid-list {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
+    .side-navbar {
+        display: none;
+    }
+}
+
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    aside {
+        display: none !important;
+    }
+
+    .grid li {
+        flex: 1 1 100%;
+    }
+}
+
+/* Media query for medium screens */
+@media (min-width: 601px) and (max-width: 900px) {
+    aside {
+        flex: 0 0 150px;
+    }
+
+    .grid li {
+        flex: 1 1 48%;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .content-container {
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .welcome, .experience, .interests {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .in-line-image, .in-line-image2 {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #biography img {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .side-navbar {
+        display: none;
+    }
+    
+    .main-content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

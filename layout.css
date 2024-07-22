@@ -1,0 +1,113 @@
+/*  Layout styles
+    Brandon Stewart
+*/
+
+/* Grid item layout */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    gap: 13px; 
+    padding: 10px;
+}
+
+.grid li{
+    list-style-type: none;
+    padding: 10px;
+    border: 1px solid #3cff00; 
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+.grid img{
+    width: 100%;
+    border: 1px solid #33ff00;
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset;
+    height: auto;
+    display: block;
+    margin: 2 auto;
+    align-items: center;
+}
+
+.grid li:hover {
+    transform: scale(1.05);
+}
+
+#lang-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 13px;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid #3cff00;
+    border-radius: 8px;
+}
+
+#lang-list li {
+    padding: 10px;
+    border: 1px solid #3cff00;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: #1eff00;
+    color: #23282d;
+    font-size: large;
+    text-align: center;
+    transition: transform 0.3s ease; 
+    
+}
+
+#lang-list li:hover {
+    transform: scale(1.05);
+}
+
+#lang-list img {
+    width: 50px;
+    height: 50px;
+    
+}
+
+/* Tech-sites layout */
+
+#tech-sites {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 13px;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid #3cff00;
+    border-radius: 8px;
+}
+
+#tech-sites li {
+    padding: 10px;
+    border: 1px solid #3cff00;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: #1eff00;
+    color: #23282d;
+    font-size: large;
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+#tech-sites li:hover {
+    transform: scale(1.05);
+}
+
+
+/* Image layout */
+
+img {
+    width: 100%;
+    box-shadow: 25px 25px 50px 0 white inset, -25px -25px 50px 0 white inset; 
+    border-radius: 8px;
+    height: auto;
+    display: block;
+    margin: 2 auto;
+}
+
