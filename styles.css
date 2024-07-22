@@ -25,7 +25,9 @@ body {
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-size: cover;
+
 }
+
 
 /* Main content and container content syles */
 
@@ -440,8 +442,8 @@ footer {
 
 
 /* Syles for Tech News */
-
-aside {
+/* Outmoded due to permission restrictions with tech-news api*/
+/* aside {
     flex: 0 0 200px;
     padding: 10px;
     margin: 10px;
@@ -470,4 +472,22 @@ article h3 {
 article a {
     color: #ffffff;
     text-decoration: none;
+} */
+
+/* Glow style */
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 5px 2px rgb(0, 255, 0);
+    }
+    50% {
+        box-shadow: 0 0 20px 10px rgb(0, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 5px 2px rgb(0, 255, 0)
+    }
+}
+
+.glow {
+    animation: pulse 2s infinite;
 }

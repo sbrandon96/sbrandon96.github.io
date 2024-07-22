@@ -23,11 +23,8 @@
             <li class="active"><a href="about.html">About</a></li>
         </ul>
     </nav>
+
     <div class="content-container">
-        <aside id="tech-news">
-            <h2>Technology News</h2>
-            <div id="articles"></div>
-        </aside>
 
         <div class="main-content">
             <section>
@@ -98,27 +95,28 @@
                     <a href="interests.html#tech">
                         <li>
                             <h4>Technology</h4>
-
                             <img src="/assets/tech.jpg" alt="ComputerScience">
-
                         </li>
                     </a>
+
                     <a href="interests.html#history">
                         <li>
                             <h4>History</h4>
-
                             <img src="/assets/history.jpg" alt="History">
-
                         </li>
                     </a>
-                    <li>
-                        <a href="interests.html#Philosophy">
 
+                    <a href="interests.html#Philosophy">
+                        <li>
                             <h4>Philosophy</h4>
-
                             <img src="/assets/philosophy.jpg" alt="Philosophy">
-
-                    </li>
+                        </li>
+                    </a>
+                    <a href="interests.html#auto-repair">
+                        <li>
+                            <h4>Automotive Maintenance</h4>
+                            <img src="/assets/autorepair.jpg" alt="auto-repair">
+                        </li>
                     </a>
                 </ul>
             </section>
@@ -126,10 +124,15 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>&copy; 2024 Brandon Stewart. All rights reserved.</p>
     </footer>
 
-    <script src="technewsapi.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var contentContainer = document.querySelector('.content-container');
+            contentContainer.classList.add('glow');
+        });
+    </script>
 </body>
 
 </html>

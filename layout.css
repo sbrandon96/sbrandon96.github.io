@@ -9,6 +9,9 @@
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
     gap: 13px; 
     padding: 10px;
+    justify-items:stretch;
+    justify-content: stretch;
+    
 }
 
 .grid li{
@@ -99,6 +102,40 @@
     transform: scale(1.05);
 }
 
+/* Car list styles */
+
+#cars{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 13px;
+    padding: 10px;
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid #3cff00;
+    border-radius: 8px;
+
+}
+
+#cars li{
+    padding: 10px;
+    border: 1px solid #3cff00;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: #1eff00;
+    color: #23282d;
+    font-size: large;
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+#cars h5{
+    margin: 0 10px;
+}
+
+#cars li:hover {
+    transform: scale(1.05);
+}
 
 /* Image layout */
 

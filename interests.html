@@ -126,19 +126,58 @@
 
                 <div class="clear"></div>
             </section>
-
             
+            <section class="interests" id="auto-repair">
+                <h2>Automotive Maintenance</h2>
+                <p class="interests">
+                    Perhaps an odd interest to have, I have always enjoyed the satisfaction of completing a repair on my own vehicle. 
+                    It has led to becoming proficient in hand tools and diagnostic tools while saving money by doing my own repairs. 
+                    Though I didn’t start with a robust knowledge of vehicle maintenance in my youth, I pressed forward and tackled problems with my car as they arose. 
+                    I probably turned some hairs gray with the annoyance of chasing down and odd problem with my car, I have gotten much experience from the struggle. 
 
-
+                <br>
+                <br>
+                Cars I have done work on:
+                <ul id="cars">
+                    <li>
+                        <h5>Honda Civic</h5>
+                        <img src="/assets/hondacivic.jpg" alt="hondacivic">
+                    </li>
+                    <li>
+                        <h5>Honda Pilot</h5>
+                        <img src="/assets/hondapilot.jpg" alt="hondapilot">
+                    </li>
+                    <li>
+                        <h5>Honda CRV</h5>
+                        <img src="/assets/hondacrv.jpg" alt="hondacrv">
+                    </li>
+                    <li>
+                        <h5>Honda Accord</h5>
+                        <img src="/assets/hondaaccord.jpg" alt="hondaaccord">
+                    </li>
+                    <li>
+                        <h5>Toyota Corolla</h5>
+                        <img src="/assets/toyotacorolla.jpg" alt="corolla">
+                    </li>
+                </ul>
+                
+                </p>
+            </section>
 
         </div>
       
     </div>
 
     <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>&copy; 2024 Brandon Stewart. All rights reserved.</p>
     </footer>
     
-    <script src="techNewsAPI.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var contentContainer = document.querySelector('.content-container');
+            contentContainer.classList.add('glow');
+        });
+    </script>
+
 </body>
 </html>

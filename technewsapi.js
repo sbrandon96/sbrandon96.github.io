@@ -1,3 +1,5 @@
+// Development with localhost only
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const apiKey = 'f352efee7daf4e0280484b6b55fe5d43';
     const apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=${apiKey}`;
