@@ -2,69 +2,43 @@
     Author: Brandon Stewart
 */
 
-@media screen and (max-width: 710px) {
-    .grid-list {
-        flex: 1 1 100%;
-        max-width: 100%;
+/* Media Queries   */
+
+/* Media query for screens 768px and above */
+
+@media screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    #lang-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
     
-    .side-navbar {
-        display: none;
-    }
 }
 
+/* Media query for screens 1024px and above */
 
-/* Media query for small screens */
-@media (max-width: 600px) {
-    aside {
-        display: none !important;
+@media screen and (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 
-    .grid li {
-        flex: 1 1 100%;
-    }
-}
-
-/* Media query for medium screens */
-@media (min-width: 601px) and (max-width: 900px) {
-    aside {
-        flex: 0 0 150px;
-    }
-
-    .grid li {
-        flex: 1 1 48%;
-    }
-}
-
-
-
-@media screen and (max-width: 480px) {
-    .content-container {
-        flex-direction: column;
-        padding: 5px;
-    }
-
-    .welcome, .experience, .interests {
-        flex-direction: column;
-        align-items: center;
+    #lang-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
     
-    .in-line-image, .in-line-image2 {
-        float: none;
-        margin: 0 auto;
+}
+
+/* Media query for screens 1440px and above */
+
+@media screen and (min-width: 1440px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 
-    #biography img {
-        float: none;
-        margin: 0 auto;
-    }
-
-    .side-navbar {
-        display: none;
+    #lang-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
     
-    .main-content {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 }
