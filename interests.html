@@ -170,6 +170,9 @@
       
     </div>
 
+    <button id="back-to-top" title="Back to Top">Back to Top &#8593</button>
+
+
     <footer>
         <p>&copy; 2024 Brandon Stewart. All rights reserved.</p>
     </footer>
@@ -179,6 +182,34 @@
             var contentContainer = document.querySelector('.content-container');
             contentContainer.classList.add('glow');
         });
+    </script>
+
+    <script>
+        // Show/hide button when scrolling
+        window.onscroll = function() {
+            scrollFunction();
+        };
+    
+        function scrollFunction() {
+            var backToTopButton = document.getElementById("back-to-top");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+    
+        // Scroll to top
+        document.getElementById("back-to-top").onclick = function() {
+            scrollToTop();
+        };
+    
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
     </script>
 
 </body>

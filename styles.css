@@ -438,3 +438,23 @@ footer {
 .glow {
     animation: pulse 2s infinite;
 }
+
+/* Back to Top Button Style */
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 75px;
+    right: 20px;
+    z-index: 99;
+    font-size: 18px;
+    background-color: #302f2f;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#back-to-top:hover {
+    background-color: #555;
+}
