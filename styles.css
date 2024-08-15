@@ -16,11 +16,11 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.7rem;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     margin: 0 0 68px 0;
     padding: 0;
     box-sizing: border-box;
+                /* I spelt green wrong and never fixed it   */
     background-image: url('/assets/backgroundGreeb.jpg');
     background-repeat: repeat-y;
     background-attachment: fixed;
@@ -346,17 +346,18 @@ footer {
 
 .grid li {
     background-color: #13ca4a;
+
 }
 
 .grid li img{
     display: block;
     margin: 0 auto;
     width: 100%;
-    height: auto;
+    height: auto; 
     border-radius: .5em;
     background-color: wheat;
     border: 1px solid #000000;
-
+    object-fit: cover;
 }
 
 .grid li h4 {
